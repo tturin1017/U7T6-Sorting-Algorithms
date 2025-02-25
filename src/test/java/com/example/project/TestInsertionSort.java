@@ -3,14 +3,13 @@ import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 import java.util.ArrayList;
 import static org.junit.jupiter.api.Assertions.*;
-import com.example.project.Selection_Sort.*;
+import com.example.project.Insertion_Sort.*;
 
 public class TestInsertionSort{
     @Test
     public void testInsertionSort_UnsortedArray() {
         int[] arr = {5, 2, 9, 1, 5};
         int[] expected = {1, 2, 5, 5, 9};
-        
         assertArrayEquals(expected, InsertionSort.insertionSort(arr), "Unsorted array should be sorted");
     }
 
